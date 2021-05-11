@@ -1,0 +1,112 @@
+/* 폰트 */
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+
+html {
+  font-family: 'LotteMartDream', sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 라이브러리 */
+.block {
+  display: block;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.inline-grid {
+  font-size: 0;
+}
+
+.inline-grid>* {
+  font-size: 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 커스텀 */
+.con {
+  width: 1200px;
+}
+
+.top-bar {
+  background-color: white;
+  color: #f9b6a9;
+  border: 3px solid #f9b6a9;
+  border-radius: 50px;
+}
+
+.top-bar__logo {
+  text-align: center;
+}
+
+.top-bar>.con>div:first-child {
+  width: 300px;
+}
+
+.top-bar>.con>div:nth-child(2) {
+  width: calc(100% - 300px - 550px);
+}
+
+.top-bar>.con>div:last-child {
+  width: 550px;
+}
+
+.top-bar__logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.top-bar__menu-box-1>ul>li {
+  font-size: 1.2rem;
+}
+
+.top-bar__menu-box-1>ul>li>a {
+  padding: 11px 20px;
+  display: block;
+}
+
+.top-bar__menu-box-1>ul>li:hover>a {
+  background-color: #f9b6a9;
+  color: white;
+}
